@@ -10,7 +10,7 @@ def welcome(message):
     sti = open('static/welcome.jpeg', 'rb')
     bot.send_sticker(message.chat.id, sti)
 
-    # keyboard
+    # keyboards
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     item1 = types.KeyboardButton("Че ты?")
     item2 = types.KeyboardButton("В кино пойдешь?")
